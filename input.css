@@ -19,11 +19,18 @@ body {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10%;
 }
 
 .title-logo h2 {
+  -webkit-transition: font-size 2s, line-height 2s;
+  transition: font-size 2s, line-height 2s;
   margin: 0;
   font-size: 400%;
+  line-height: 90%;
 }
 
 .body-overflow {
@@ -78,6 +85,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
+  margin-right: 6%;
 }
 
 .nav-hor ul li {
@@ -117,6 +125,10 @@ body {
 .red {
   background-color: #D35266;
   color: white;
+  background-image: url("/background.svg");
+  background-size: 100vh 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -131,10 +143,12 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .justify-c-c {
@@ -167,35 +181,71 @@ main {
   height: 100%;
 }
 
+.shop-now {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  font-size: 200%;
+}
+
+.shop-now a {
+  background-color: yellow;
+  padding: 4%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30%;
+  border-color: yellow;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.flex-middle {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    background-color: green;
-  }
   .container {
     max-width: 1024px;
   }
-  .nav-hor ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .title-logo {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  .nav-hor ul li .red {
-    background-color: #D35266;
-    color: white;
-  }
-  .nav-hor ul li .red i svg path {
-    fill: white;
-  }
-  .nav-hor ul li a span {
-    display: inline-block;
+  .title-logo h2 {
+    margin: 0;
+    font-size: 800%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   body {
-    background-color: purple;
     padding: 0;
     margin: 0;
+  }
+  .title-logo h2 {
+    margin: 0;
+    font-size: 1200%;
+  }
+  .nav-hor ul {
+    margin-right: 1%;
   }
   .nav-hor ul li {
     display: -webkit-box;

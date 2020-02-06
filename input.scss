@@ -23,16 +23,21 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
+
 }
 
 .title-logo {
   font-family: $font-mont;
   text-transform: uppercase;
   text-align: center;
+  width: fit-content;
+  margin-bottom: 10%;
 
   h2 {
+    transition: font-size 2s, line-height 2s;
     margin: 0;
     font-size: 400%;
+    line-height: 90%;
   }
 }
 
@@ -67,6 +72,7 @@ body {
     padding: 0;
     width: fit-content;
     text-align: center;
+    margin-right: 6%;
 
     li {
       padding: 0 10px;
@@ -74,9 +80,9 @@ body {
       width: fit-content;
 
       .red {
-        i{
-          svg{
-            path{
+        i {
+          svg {
+            path {
               fill: yellow;
             }
           }
@@ -94,7 +100,7 @@ body {
         align-items: center;
         white-space: nowrap;
 
-        span{
+        span {
           display: none;
         }
       }
@@ -105,6 +111,10 @@ body {
 .red {
   background-color: $c-red;
   color: white;
+  background-image: url("/background.svg");
+  background-size: 100vh 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -117,7 +127,8 @@ header {
 
 .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .justify-c-c {
@@ -148,72 +159,88 @@ main {
   height: 100%;
 }
 
-@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1px) {
-  body {
-    background-color: green
-  }
+.shop-now {
+  padding: 2%;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 200%;
 
+  a {
+    background-color: yellow;
+    padding: 4%;
+    width: fit-content;
+    border-radius: 30%;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 1px;
+  }
+}
+
+.flex-middle {
+  justify-content: center;
+  display: flex;
+  align-content: center
+}
+
+@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1px) {
   .container {
     max-width: $breakpoint-desktop;
   }
 
-  .nav-hor {
-    ul {
-      li {
+  .title-logo {
+    font-family: $font-mont;
+    text-transform: uppercase;
+    text-align: center;
+    width: fit-content;
 
-        .red {
-          background-color: $c-red;
-          color: white;
-          
-          i{
-            svg{
-              path{
-                fill: white;
-              }
-            }
-          }
-        }
-
-        a{
-          span{
-            display: inline-block;
-          }
-        }
-        display: flex;
-      }
+    h2 {
+      margin: 0;
+      font-size: 800%;
     }
   }
 }
 
 @media only screen and (min-width: $breakpoint-desktop) {
   body {
-    background-color: purple;
     padding: 0;
     margin: 0;
   }
 
+  .title-logo {
+    h2 {
+      margin: 0;
+      font-size: 1200%;
+    }
+  }
+
   .nav-hor {
     ul {
+
+      margin-right: 1%;
+
       li {
 
         .red {
           background-color: $c-red;
           color: white;
-          
-          i{
-            svg{
-              path{
+
+          i {
+            svg {
+              path {
                 fill: white;
               }
             }
           }
         }
 
-        a{
-          span{
+        a {
+          span {
             display: inline-block;
           }
         }
+
         display: flex;
       }
     }
