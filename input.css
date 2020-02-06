@@ -1,0 +1,222 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.title-logo {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-logo h2 {
+  margin: 0;
+  font-size: 400%;
+}
+
+.body-overflow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.nav-hor {
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-hor .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-hor .togle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-hor ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.nav-hor ul .togle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-hor ul li {
+  padding: 0 10px;
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.nav-hor ul li .red {
+  background-color: #D35266;
+  color: white;
+}
+
+.nav-hor ul li a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.red {
+  background-color: #D35266;
+  color: white;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.justify-c-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dark-red {
+  color: rgba(47, 47, 47, 0.733);
+  background-color: #272727;
+}
+
+.dark-red a {
+  color: rgba(158, 158, 158, 0.733);
+  background-color: #272727;
+  text-decoration: none;
+}
+
+main {
+  margin-top: 70px;
+}
+
+.main-content {
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+.fill-hight {
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: green;
+  }
+  .container {
+    max-width: 768px;
+  }
+  .nav-hor ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: purple;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-hor ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container {
+    max-width: 1024px;
+  }
+}
+/*# sourceMappingURL=input.css.map */
