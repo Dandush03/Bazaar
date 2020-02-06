@@ -45,9 +45,10 @@ body {
 .nav-hor {
   height: 70px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   .logo {
+    padding-left: 10%;
     display: flex;
     font-family: $font-mont;
     width: fit-content;
@@ -58,7 +59,8 @@ body {
     align-items: center;
   }
 
-  .togle {
+  .toggle {
+    padding-right: 10%;
     display: flex;
     font-family: $font-mont;
     width: fit-content;
@@ -67,6 +69,7 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
     align-items: center;
+    justify-content: flex-end;
   }
 
   ul {
@@ -77,10 +80,6 @@ body {
     padding: 0;
     width: fit-content;
     text-align: center;
-
-    .togle {
-      display: flex;
-    }
 
     li {
       padding: 0 10px;
@@ -157,10 +156,15 @@ main {
   }
 
   .container {
-    max-width: $breakpoint-tablet;
+    max-width: $breakpoint-desktop;
   }
 
   .nav-hor {
+
+    .toggle{
+      display: none;
+    }
+
     ul {
       li {
         display: flex;
@@ -177,6 +181,11 @@ main {
   }
 
   .nav-hor {
+
+    .toggle{
+      display: none;
+    }
+
     ul {
       li {
         display: flex;

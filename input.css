@@ -37,12 +37,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav-hor .logo {
+  padding-left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +63,8 @@ body {
           align-items: center;
 }
 
-.nav-hor .togle {
+.nav-hor .toggle {
+  padding-right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,6 +82,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .nav-hor ul {
@@ -97,12 +102,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
-}
-
-.nav-hor ul .togle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .nav-hor ul li {
@@ -195,7 +194,10 @@ main {
     background-color: green;
   }
   .container {
-    max-width: 768px;
+    max-width: 1024px;
+  }
+  .nav-hor .toggle {
+    display: none;
   }
   .nav-hor ul li {
     display: -webkit-box;
@@ -209,6 +211,9 @@ main {
     background-color: purple;
     padding: 0;
     margin: 0;
+  }
+  .nav-hor .toggle {
+    display: none;
   }
   .nav-hor ul li {
     display: -webkit-box;
