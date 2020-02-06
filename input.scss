@@ -48,7 +48,7 @@ body {
   justify-content: space-between;
 
   .logo {
-    padding-left: 10%;
+    padding-left: 6%;
     display: flex;
     font-family: $font-mont;
     width: fit-content;
@@ -57,19 +57,6 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
     align-items: center;
-  }
-
-  .toggle {
-    padding-right: 10%;
-    display: flex;
-    font-family: $font-mont;
-    width: fit-content;
-    text-align: center;
-    flex-direction: row;
-    text-transform: uppercase;
-    white-space: nowrap;
-    align-items: center;
-    justify-content: flex-end;
   }
 
   ul {
@@ -83,22 +70,33 @@ body {
 
     li {
       padding: 0 10px;
-      display: none;
+      display: flex;
       width: fit-content;
 
       .red {
-        background-color: $c-red;
-        color: white;
+        i{
+          svg{
+            path{
+              fill: yellow;
+            }
+          }
+        }
+      }
+
+      i {
+        padding-right: 5px;
       }
 
       a {
-        width: fit-content;
-        padding: 10%;
-        display: inline-flex;
-        flex-direction: row;
+        padding: 6%;
+        display: flex;
         text-transform: uppercase;
-        white-space: nowrap;
         align-items: center;
+        white-space: nowrap;
+
+        span{
+          display: none;
+        }
       }
     }
   }
@@ -160,13 +158,27 @@ main {
   }
 
   .nav-hor {
-
-    .toggle{
-      display: none;
-    }
-
     ul {
       li {
+
+        .red {
+          background-color: $c-red;
+          color: white;
+          
+          i{
+            svg{
+              path{
+                fill: white;
+              }
+            }
+          }
+        }
+
+        a{
+          span{
+            display: inline-block;
+          }
+        }
         display: flex;
       }
     }
@@ -181,13 +193,27 @@ main {
   }
 
   .nav-hor {
-
-    .toggle{
-      display: none;
-    }
-
     ul {
       li {
+
+        .red {
+          background-color: $c-red;
+          color: white;
+          
+          i{
+            svg{
+              path{
+                fill: white;
+              }
+            }
+          }
+        }
+
+        a{
+          span{
+            display: inline-block;
+          }
+        }
         display: flex;
       }
     }

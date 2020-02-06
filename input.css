@@ -43,7 +43,7 @@ body {
 }
 
 .nav-hor .logo {
-  padding-left: 10%;
+  padding-left: 6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,30 +61,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.nav-hor .toggle {
-  padding-right: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-transform: uppercase;
-  white-space: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .nav-hor ul {
@@ -106,34 +82,36 @@ body {
 
 .nav-hor ul li {
   padding: 0 10px;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.nav-hor ul li .red {
-  background-color: #D35266;
-  color: white;
+.nav-hor ul li .red i svg path {
+  fill: yellow;
+}
+
+.nav-hor ul li i {
+  padding-right: 5px;
 }
 
 .nav-hor ul li a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10%;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  padding: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-transform: uppercase;
-  white-space: nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  white-space: nowrap;
+}
+
+.nav-hor ul li a span {
+  display: none;
 }
 
 .red {
@@ -196,13 +174,20 @@ main {
   .container {
     max-width: 1024px;
   }
-  .nav-hor .toggle {
-    display: none;
-  }
   .nav-hor ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .nav-hor ul li .red {
+    background-color: #D35266;
+    color: white;
+  }
+  .nav-hor ul li .red i svg path {
+    fill: white;
+  }
+  .nav-hor ul li a span {
+    display: inline-block;
   }
 }
 
@@ -212,13 +197,20 @@ main {
     padding: 0;
     margin: 0;
   }
-  .nav-hor .toggle {
-    display: none;
-  }
   .nav-hor ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .nav-hor ul li .red {
+    background-color: #D35266;
+    color: white;
+  }
+  .nav-hor ul li .red i svg path {
+    fill: white;
+  }
+  .nav-hor ul li a span {
+    display: inline-block;
   }
   .container {
     max-width: 1024px;
