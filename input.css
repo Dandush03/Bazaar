@@ -208,8 +208,8 @@ main {
   color: #D35266;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .shop-now a:hover {
