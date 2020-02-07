@@ -291,7 +291,7 @@ main {
 }
 
 body {
-  background-color: #e6e6e6;
+  background-color: whitesmoke;
 }
 
 article {
@@ -562,9 +562,20 @@ a:hover {
   height: 24px;
 }
 
+.row > .container {
+  border: none;
+}
+
+section > .container {
+  border-right: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
+}
+
 .category {
   overflow-x: scroll;
   overflow-y: hidden;
+  border-right: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
 }
 
 .category::-webkit-scrollbar {
@@ -572,8 +583,6 @@ a:hover {
 }
 
 .border-inset {
-  border-right: lightgray 2px solid;
-  border-left: #afafaf 2px solid;
   border-bottom: lightgray 2px solid;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,6 +772,11 @@ a:hover {
 
 .product > :last-child > :last-child svg path {
   fill: #888;
+}
+
+.trading {
+  border-right: 1px solid #d8d8d8;
+  border-left: 1px solid #d8d8d8;
 }
 
 @media only screen and (min-width: 768px) {
