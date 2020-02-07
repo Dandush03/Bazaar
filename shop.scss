@@ -1,5 +1,21 @@
 @import "index.scss";
-$grid-spacing:3%;
+$grid-spacing:1%;
+
+body {
+  background-color: rgb(230, 230, 230);
+}
+
+article {
+  background-color: white;
+}
+
+.main-content{
+  overflow: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
 
 [class^="col-"] {
   float: left;
@@ -21,11 +37,11 @@ $grid-spacing:3%;
   display: flex !important;
 }
 
-.float-left{
+.float-left {
   float: left;
 }
 
-.float-right{
+.float-right {
   float: right;
 }
 
@@ -147,9 +163,89 @@ $grid-spacing:3%;
   }
 }
 
+.line{
+  border: $c-gray solid 1px;
+  background-color: white;
+  margin-right: 10%;
+  margin-top: 1%;
+}
 
+.add-title {
+  background-color: white;
+  padding: 1%;
+  padding-left: 10%;
+  font-family: $font-mont;
+  text-transform: uppercase;
+}
 
-@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1px) {
+.add-img {
+  padding: 2%;
+}
+
+.add-desc {
+
+  padding: 2% 10%;
+
+  font-family: $font-rob;
+  color: $c-black;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    padding: 0 4%;
+    margin: 0;
+    font-size: 250%;
+  }
+
+  span {
+    padding: 0 4%;
+    margin: 0;
+    font-size: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    text-align: justify;
+  }
+
+  a {
+    padding: 0 4%;
+    margin: 0;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+
+    span {
+      word-break: keep-all;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+
+    .add-cart {
+      svg {
+        width: 24px;
+        height: 24px;
+
+        path {
+          fill: $c-red;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+
+  .flex-box-m {
+    display: flex !important;
+  }
+
   .product-search {
     flex-direction: row;
   }
