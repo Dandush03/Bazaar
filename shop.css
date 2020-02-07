@@ -20,7 +20,7 @@ body {
 }
 
 .background-img {
-  background-image: url("/background.svg");
+  background-image: url("background.svg");
   background-size: 100vh 100vh;
   background-position: center;
   background-repeat: no-repeat;
