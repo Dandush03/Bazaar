@@ -608,7 +608,12 @@ footer {
   }
 }
 
-@media only screen and (min-width: $breakpoint-desktop) {
+@media only screen and (min-width: $breakpoint-desktop + 1px) {
+
+  .arrows{
+    display: none;
+  }
+
   .product-search {
     flex-direction: row;
   }

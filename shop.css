@@ -960,7 +960,10 @@ footer > :last-child > div > div > ul > :first-child > a {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
+  .arrows {
+    display: none;
+  }
   .product-search {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
