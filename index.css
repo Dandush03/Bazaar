@@ -9,10 +9,21 @@
   width: 100%;
 }
 
+section h6 {
+  display: none;
+}
+
 body {
   padding: 0;
   margin: 0;
   position: relative;
+}
+
+.background-img {
+  background-image: url("/background.svg");
+  background-size: 100vh 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title-logo {
@@ -125,10 +136,6 @@ body {
 .red {
   background-color: #D35266;
   color: white;
-  background-image: url("/background.svg");
-  background-size: 100vh 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 header {
@@ -269,6 +276,8 @@ main {
   .nav-hor ul li .red {
     background-color: #D35266;
     color: white;
+    border-radius: 5px;
+    border: #D35266 1px solid;
   }
   .nav-hor ul li .red i svg path {
     fill: white;
@@ -280,4 +289,4 @@ main {
     max-width: 1024px;
   }
 }
-/*# sourceMappingURL=input.css.map */
+/*# sourceMappingURL=index.css.map */

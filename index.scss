@@ -19,11 +19,24 @@ $available-screen: calc(100vh - 70px);
   width: 100%;
 }
 
+section{
+  h6{
+    display: none;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
   position: relative;
 
+}
+
+.background-img{
+  background-image: url("/background.svg");
+  background-size: 100vh 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title-logo {
@@ -111,10 +124,7 @@ body {
 .red {
   background-color: $c-red;
   color: white;
-  background-image: url("/background.svg");
-  background-size: 100vh 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  
 }
 
 header {
@@ -235,6 +245,8 @@ main {
         .red {
           background-color: $c-red;
           color: white;
+          border-radius: 5px;
+          border: $c-red 1px solid;
 
           i {
             svg {

@@ -9,7 +9,7 @@
   <meta name="viewport"
     content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 
-  <link href="input.css" rel="stylesheet">
+  <link href="shop.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Roboto:400,500,700&display=swap"
     rel="stylesheet">
   <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg="nest"></script>
@@ -29,7 +29,7 @@
           </li>
 
           <li>
-            <a href="#"><i class="fas fa-crown"></i></i><span>Lastes Purchase</span></a>
+            <a href="#"><i class="fas fa-list-alt"></i><span>Lastes Purchase</span></a>
           </li>
 
           <li>
@@ -45,12 +45,29 @@
 
     <main class="main-content">
 
-      <div class="row red fill-hight">
-
+      <section class="row red background-img col-12">
+        <h6>Searcher Section</h6>
         <div class="container justify-c-c">
-
+          <form action="#" class="product-search container" method="GET"> 
+            <select name="departments">
+              <option value="0" disabled selected class="disabled-opt">- Departments -</option>
+              <option value="1">Phones</option>
+              <option value="2">Pads</option>
+              <option value="3">Computers</option>
+              <option value="4">Printers</option>
+            </select>
+            <input type="text" placeholder="Branch">
+            <input type="text" placeholder="Product">
+            <button type="submit">
+              <i class="fas fa-search-dollar"></i>
+              <span>Go!</span>
+            </button>
+          </form>
         </div>
 
+      </section>
+      <div class="trading">
+        <div></div>
       </div>
     </main>
 

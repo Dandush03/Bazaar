@@ -1,0 +1,257 @@
+@import "index.scss";
+$grid-spacing:3%;
+
+[class^="col-"] {
+  float: left;
+  margin-right: $grid-spacing;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-right: 0%;
+  }
+}
+
+%clearfix:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.row {
+  @extend %clearfix;
+
+  &+& {
+    margin-top: $grid-spacing;
+  }
+}
+
+.col-1 {
+  width: (100% / 12) - ($grid-spacing * 11 / 12);
+}
+
+.col-2 {
+  width: (100% / 6) - ($grid-spacing * 10 / 12);
+}
+
+.col-3 {
+  width: (100% / 4) - ($grid-spacing * 9 / 12);
+}
+
+.col-4 {
+  width: (100% / 3) - ($grid-spacing * 8 / 12);
+}
+
+.col-5 {
+  width: (100% / 2.4) - ($grid-spacing * 7 / 12);
+}
+
+.col-6 {
+  width: (100% / 2) - ($grid-spacing * 6 / 12);
+}
+
+.col-7 {
+  width: (100% / 1.714285714285714) - ($grid-spacing * 5 / 12);
+}
+
+.col-8 {
+  width: (100% / 1.5) - ($grid-spacing * 4 / 12);
+}
+
+.col-9 {
+  width: (100% / 1.333333333333333) - ($grid-spacing * 3 / 12);
+}
+
+.col-10 {
+  width: (100% / 1.2) - ($grid-spacing * 2 / 12);
+}
+
+.col-11 {
+  width: (100% / 1.090909090909091) - ($grid-spacing * 1 / 12);
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.product-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10% 0;
+
+  input {
+    margin: 1%;
+    height: 40px;
+    font-size: 120%;
+    padding-left: 1%;
+    color: $c-black;
+    border-radius: 5px;
+    border-width: 1px;
+    transition: all 2s;
+  }
+
+  select {
+    transition: all 2s;
+    height: 40px;
+    margin: 1%;
+    background-color: white;
+    font-size: 120%;
+    border-radius: 5px;
+    border-width: 1px;
+    color: $c-black;
+
+    option {
+      color: $c-black;
+    }
+  }
+
+  button {
+    transition: all 2s;
+    margin: 1%;
+    height: 40px;
+    width: fit-content;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-mont;
+    border-radius: 5px;
+    color: $c-red;
+    background-color: $c-black;
+    border-color: rgba(255, 255, 0, 0.527);
+
+    svg {
+      height: 100%;
+      width: 100%;
+      min-width: 24px;
+      min-height: 24px;
+
+      path {
+        fill: $c-red;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 1px) {
+  .product-search {
+    flex-direction: row;
+  }
+
+  .product-search {
+
+    input {
+      width: 200px;
+    }
+
+    button {
+      width: fit-content;
+    }
+  }
+
+  .col-m-1 {
+    width: (100% / 12) - ($grid-spacing * 11 / 12);
+  }
+  
+  .col-l-m-2 {
+    width: (100% / 6) - ($grid-spacing * 10 / 12);
+  }
+  
+  .col-l-m-3 {
+    width: (100% / 4) - ($grid-spacing * 9 / 12);
+  }
+  
+  .col-l-m-4 {
+    width: (100% / 3) - ($grid-spacing * 8 / 12);
+  }
+  
+  .col-l-m-5 {
+    width: (100% / 2.4) - ($grid-spacing * 7 / 12);
+  }
+  
+  .col-l-m-6 {
+    width: (100% / 2) - ($grid-spacing * 6 / 12);
+  }
+  
+  .col-l-m-7 {
+    width: (100% / 1.714285714285714) - ($grid-spacing * 5 / 12);
+  }
+  
+  .col-l-m-8 {
+    width: (100% / 1.5) - ($grid-spacing * 4 / 12);
+  }
+  
+  .col-l-m-9 {
+    width: (100% / 1.333333333333333) - ($grid-spacing * 3 / 12);
+  }
+  
+  .col-l-m-10 {
+    width: (100% / 1.2) - ($grid-spacing * 2 / 12);
+  }
+  
+  .col-l-m-11 {
+    width: (100% / 1.090909090909091) - ($grid-spacing * 1 / 12);
+  }
+  
+  .col-l-m-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  .product-search {
+    flex-direction: row;
+  }
+
+  .col-l-l-1 {
+    width: (100% / 12) - ($grid-spacing * 11 / 12);
+  }
+  
+  .col-l-l-2 {
+    width: (100% / 6) - ($grid-spacing * 10 / 12);
+  }
+  
+  .col-l-l-3 {
+    width: (100% / 4) - ($grid-spacing * 9 / 12);
+  }
+  
+  .col-l-l-4 {
+    width: (100% / 3) - ($grid-spacing * 8 / 12);
+  }
+  
+  .col-l-l-5 {
+    width: (100% / 2.4) - ($grid-spacing * 7 / 12);
+  }
+  
+  .col-l-l-6 {
+    width: (100% / 2) - ($grid-spacing * 6 / 12);
+  }
+  
+  .col-l-l-7 {
+    width: (100% / 1.714285714285714) - ($grid-spacing * 5 / 12);
+  }
+  
+  .col-l-l-8 {
+    width: (100% / 1.5) - ($grid-spacing * 4 / 12);
+  }
+  
+  .col-l-l-9 {
+    width: (100% / 1.333333333333333) - ($grid-spacing * 3 / 12);
+  }
+  
+  .col-l-l-10 {
+    width: (100% / 1.2) - ($grid-spacing * 2 / 12);
+  }
+  
+  .col-l-l-11 {
+    width: (100% / 1.090909090909091) - ($grid-spacing * 1 / 12);
+  }
+  
+  .col-l-l-12 {
+    width: 100%;
+  }
+}
