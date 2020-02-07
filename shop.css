@@ -305,6 +305,7 @@ a:hover {
 .main-content {
   overflow-y: scroll;
   overflow-x: hidden;
+  height: auto;
 }
 
 .main-content::-webkit-scrollbar {
@@ -591,6 +592,10 @@ section > .container {
   max-width: 3000px;
 }
 
+.no-border {
+  border: none;
+}
+
 .arrows {
   max-width: 3000px;
   position: absolute;
@@ -777,6 +782,124 @@ section > .container {
 .trading {
   border-right: 1px solid #d8d8d8;
   border-left: 1px solid #d8d8d8;
+}
+
+footer {
+  padding: 15px 0;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+footer > div {
+  padding: 0 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+}
+
+footer ul li {
+  padding-top: 10px;
+}
+
+footer ul li a {
+  border-left: 1px solid #888;
+  padding: 0 10px;
+  color: #888;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+footer > :first-child > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer > :first-child > div > :first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer > :first-child > div > :first-child > a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer > :first-child > div > :first-child > p {
+  padding: 0 10px;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer > :first-child > div > ul {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer > :first-child > div .icon {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+footer > :first-child > div .icon > svg {
+  height: 20px;
+  width: 20px;
+}
+
+footer > :last-child > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer > :last-child > div > div span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 10px;
+}
+
+footer > :last-child > div > div > ul > li {
+  padding: 0;
+}
+
+footer > :last-child > div > div > ul > :first-child > a {
+  border: none;
 }
 
 @media only screen and (min-width: 768px) {
