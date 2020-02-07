@@ -480,7 +480,8 @@ a:hover {
 .line {
   border: #888 solid 1px;
   background-color: white;
-  margin-right: 10%;
+  margin-right: 2%;
+  margin-left: -8%;
   margin-top: 1%;
 }
 
@@ -560,6 +561,17 @@ a:hover {
   height: 24px;
 }
 
+.border-insite {
+  border: lightgray 2px inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .product {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -570,7 +582,7 @@ a:hover {
   border-color: rgba(128, 128, 128, 0.596);
   border-width: 2px;
   border-style: outset;
-  margin: 1%;
+  margin: 0 1%;
 }
 
 .product > :first-child {
@@ -586,6 +598,105 @@ a:hover {
 .product > :first-child a picture img {
   height: auto;
   width: 100%;
+}
+
+.product > :last-child {
+  font-family: "Roboto", sans-serif;
+  padding: 5%;
+}
+
+.product > :last-child h2 {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-right: 0em;
+  padding-right: 1em;
+  text-align: justify;
+  max-height: 2.4em;
+  line-height: 1.2em;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.product > :last-child h2::before {
+  position: absolute;
+  content: '...';
+  right: 0;
+  bottom: 0;
+}
+
+.product > :last-child h2::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background-color: white;
+}
+
+.product > :last-child > :nth-child(even) {
+  position: relative;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product > :last-child > :nth-child(even) span {
+  font-size: 80%;
+  padding: 0;
+}
+
+.product > :last-child > :nth-child(even) > :first-child {
+  color: #D35266;
+  font-weight: bold;
+}
+
+.product > :last-child > :nth-child(even) > :last-child {
+  padding: 5px 0;
+  color: #888;
+  font-weight: 400;
+}
+
+.product > :last-child > :last-child {
+  font-size: 100%;
+  position: relative;
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #D35266;
+}
+
+.product > :last-child > :last-child a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product > :last-child > :last-child svg {
+  width: 24px;
+  height: 24px;
+}
+
+.product > :last-child > :last-child svg path {
+  fill: #888;
 }
 
 @media only screen and (min-width: 768px) {
