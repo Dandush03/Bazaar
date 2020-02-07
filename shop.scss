@@ -16,7 +16,8 @@ a {
 }
 
 .main-content {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     display: none;
@@ -252,19 +253,48 @@ a {
   }
 }
 
-.border-insite{
-  border: lightgray 2px inset;
+.border-inset{
+  border-right: lightgray 2px solid;
+  border-left: rgb(175, 175, 175) 2px solid;
+  border-bottom: lightgray 2px solid;
+  border-top: rgb(175, 175, 175) 2px solid;
   display: flex;
   flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+.arrows{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  z-index: 10;
+  height: 100%;
+
+  div{
+    margin: auto 0;
+  }
+  &>:last-child{
+    transform: rotate(180deg);
+  }
+  svg{
+    path{
+      stroke: $c-black;
+    }
+  };
 }
 
 .product {
   flex-direction: column;
   overflow: hidden;
   padding: 1%;
-  border-color: rgba(128, 128, 128, 0.596);
-  border-width: 2px;
-  border-style: outset;
+  border-right: lightgray 2px solid;
+  border-left: lightgray 2px solid;
   margin: 0 1%;
 
   &>:first-child {
@@ -490,5 +520,11 @@ a {
 
   .col-l-12 {
     width: 100%;
+  }
+
+  .border-inset{
+    &::-webkit-scrollbar{
+      display: unset;
+    }
   }
 }

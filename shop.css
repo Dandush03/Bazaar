@@ -303,7 +303,8 @@ a:hover {
 }
 
 .main-content {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .main-content::-webkit-scrollbar {
@@ -561,8 +562,11 @@ a:hover {
   height: 24px;
 }
 
-.border-insite {
-  border: lightgray 2px inset;
+.border-inset {
+  border-right: lightgray 2px solid;
+  border-left: #afafaf 2px solid;
+  border-bottom: lightgray 2px solid;
+  border-top: #afafaf 2px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,6 +574,42 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.border-inset::-webkit-scrollbar {
+  display: none;
+}
+
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10;
+  height: 100%;
+}
+
+.arrows div {
+  margin: auto 0;
+}
+
+.arrows > :last-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.arrows svg path {
+  stroke: #383838;
 }
 
 .product {
@@ -579,9 +619,8 @@ a:hover {
           flex-direction: column;
   overflow: hidden;
   padding: 1%;
-  border-color: rgba(128, 128, 128, 0.596);
-  border-width: 2px;
-  border-style: outset;
+  border-right: lightgray 2px solid;
+  border-left: lightgray 2px solid;
   margin: 0 1%;
 }
 
@@ -799,6 +838,9 @@ a:hover {
   }
   .col-l-12 {
     width: 100%;
+  }
+  .border-inset::-webkit-scrollbar {
+    display: unset;
   }
 }
 /*# sourceMappingURL=shop.css.map */
