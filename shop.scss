@@ -1,5 +1,6 @@
 @import "index.scss";
 $grid-spacing: 0.1%;
+$max-width-sections: 3000px;
 
 body {
   background-color: rgb(230, 230, 230);
@@ -253,40 +254,58 @@ a {
   }
 }
 
-.border-inset{
-  border-right: lightgray 2px solid;
-  border-left: rgb(175, 175, 175) 2px solid;
-  border-bottom: lightgray 2px solid;
-  border-top: rgb(175, 175, 175) 2px solid;
-  display: flex;
-  flex-direction: row;
+.category {
   overflow-x: scroll;
   overflow-y: hidden;
-  &::-webkit-scrollbar{
+
+  &::-webkit-scrollbar {
     display: none;
   }
 }
 
-.arrows{
+.border-inset {
+  border-right: lightgray 2px solid;
+  border-left: rgb(175, 175, 175) 2px solid;
+  border-bottom: lightgray 2px solid;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  position: absolute;
-  justify-content: space-between;
-  z-index: 10;
-  height: 100%;
+  width: auto;
+  max-width: $max-width-sections;
+}
 
-  div{
-    margin: auto 0;
-  }
-  &>:last-child{
-    transform: rotate(180deg);
-  }
-  svg{
-    path{
-      stroke: $c-black;
+.arrows {
+  max-width: $max-width-sections;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+
+  &>div {
+    justify-content: space-between;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    max-width:  $breakpoint-desktop;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: sticky;
+
+    div {
+      margin: auto 0;
     }
-  };
+
+    &>:last-child {
+      transform: rotate(180deg);
+    }
+
+    svg {
+      path {
+        stroke: $c-black;
+      }
+    }
+  }
 }
 
 .product {
@@ -295,7 +314,10 @@ a {
   padding: 1%;
   border-right: lightgray 2px solid;
   border-left: lightgray 2px solid;
-  margin: 0 1%;
+  margin: 4px 2px;
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
 
   &>:first-child {
     display: block;
@@ -354,7 +376,8 @@ a {
       padding: 0;
       display: flex;
       flex-direction: column;
-      span{
+
+      span {
         font-size: 80%;
         padding: 0;
       }
@@ -380,7 +403,7 @@ a {
       justify-content: space-between;
       color: $c-red;
 
-      a{
+      a {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -389,6 +412,7 @@ a {
       svg {
         width: 24px;
         height: 24px;
+
         path {
           fill: $c-gray
         }
@@ -522,8 +546,8 @@ a {
     width: 100%;
   }
 
-  .border-inset{
-    &::-webkit-scrollbar{
+  .category {
+    &::-webkit-scrollbar {
       display: unset;
     }
   }

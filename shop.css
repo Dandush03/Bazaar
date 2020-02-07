@@ -562,27 +562,45 @@ a:hover {
   height: 24px;
 }
 
-.border-inset {
-  border-right: lightgray 2px solid;
-  border-left: #afafaf 2px solid;
-  border-bottom: lightgray 2px solid;
-  border-top: #afafaf 2px solid;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.category {
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
-.border-inset::-webkit-scrollbar {
+.category::-webkit-scrollbar {
   display: none;
 }
 
+.border-inset {
+  border-right: lightgray 2px solid;
+  border-left: #afafaf 2px solid;
+  border-bottom: lightgray 2px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  max-width: 3000px;
+}
+
 .arrows {
+  max-width: 3000px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.arrows > div {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,25 +608,24 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100%;
-  position: absolute;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 10;
-  height: 100%;
+  max-width: 1024px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-.arrows div {
+.arrows > div div {
   margin: auto 0;
 }
 
-.arrows > :last-child {
+.arrows > div > :last-child {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.arrows svg path {
+.arrows > div svg path {
   stroke: #383838;
 }
 
@@ -621,7 +638,10 @@ a:hover {
   padding: 1%;
   border-right: lightgray 2px solid;
   border-left: lightgray 2px solid;
-  margin: 0 1%;
+  margin: 4px 2px;
+  width: 300px;
+  max-width: 300px;
+  min-width: 300px;
 }
 
 .product > :first-child {
@@ -839,7 +859,7 @@ a:hover {
   .col-l-12 {
     width: 100%;
   }
-  .border-inset::-webkit-scrollbar {
+  .category::-webkit-scrollbar {
     display: unset;
   }
 }
