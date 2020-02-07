@@ -326,11 +326,13 @@ a {
       picture {
         position: relative;
         overflow: hidden;
-        display: block;
+        display: flex;
+        justify-content: center;
 
         img {
-          height: auto;
-          width: 100%;
+          height: 220px;
+          width: auto;
+          max-height: 220px;
         }
       }
     }
@@ -352,7 +354,7 @@ a {
       line-height: 1.2em;
       overflow: hidden;
       font-weight: 400;
-
+      word-break: break-all;
       &::before {
         position: absolute;
         content: '...';
@@ -549,6 +551,12 @@ a {
   .category {
     &::-webkit-scrollbar {
       display: unset;
+      background-color: rgb(173, 173, 173);
+      border: gray solid unset;
+    }
+    &::-webkit-scrollbar-thumb{
+      background-color: lightgray;
+      border: black solid solid;
     }
   }
 }

@@ -651,12 +651,18 @@ a:hover {
 .product > :first-child a picture {
   position: relative;
   overflow: hidden;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .product > :first-child a picture img {
-  height: auto;
-  width: 100%;
+  height: 220px;
+  width: auto;
+  max-height: 220px;
 }
 
 .product > :last-child {
@@ -676,6 +682,7 @@ a:hover {
   line-height: 1.2em;
   overflow: hidden;
   font-weight: 400;
+  word-break: break-all;
 }
 
 .product > :last-child h2::before {
@@ -861,6 +868,12 @@ a:hover {
   }
   .category::-webkit-scrollbar {
     display: unset;
+    background-color: #adadad;
+    border: gray solid unset;
+  }
+  .category::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border: black solid solid;
   }
 }
 /*# sourceMappingURL=shop.css.map */
