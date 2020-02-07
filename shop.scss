@@ -1,5 +1,5 @@
 @import "index.scss";
-$grid-spacing:1%;
+$grid-spacing: 0.1%;
 
 body {
   background-color: rgb(230, 230, 230);
@@ -9,9 +9,16 @@ article {
   background-color: white;
 }
 
-.main-content{
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main-content {
   overflow: scroll;
-  &::-webkit-scrollbar{
+
+  &::-webkit-scrollbar {
     display: none;
   }
 }
@@ -101,6 +108,10 @@ article {
   width: 100%;
 }
 
+.b-white {
+  background-color: white;
+}
+
 .product-search {
   display: flex;
   flex-direction: column;
@@ -163,7 +174,7 @@ article {
   }
 }
 
-.line{
+.line {
   border: $c-gray solid 1px;
   background-color: white;
   margin-right: 10%;
@@ -238,6 +249,33 @@ article {
     }
 
   }
+}
+
+.product {
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1%;
+  border-color: rgba(128, 128, 128, 0.596);
+  border-width: 2px;
+  border-style: outset;
+  margin: 1%;
+
+  &>:first-child {
+    display: block;
+    a {
+      picture {
+        position: relative;
+        overflow: hidden;
+        display: block;
+
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
 }
 
 @media only screen and (min-width: $breakpoint-tablet) {
