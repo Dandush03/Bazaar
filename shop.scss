@@ -17,6 +17,18 @@ $grid-spacing:3%;
   content: '';
 }
 
+.flex-box {
+  display: flex !important;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
 .row {
   @extend %clearfix;
 
@@ -156,48 +168,48 @@ $grid-spacing:3%;
   .col-m-1 {
     width: (100% / 12) - ($grid-spacing * 11 / 12);
   }
-  
-  .col-l-m-2 {
+
+  .col-m-2 {
     width: (100% / 6) - ($grid-spacing * 10 / 12);
   }
-  
-  .col-l-m-3 {
+
+  .col-m-3 {
     width: (100% / 4) - ($grid-spacing * 9 / 12);
   }
-  
-  .col-l-m-4 {
+
+  .col-m-4 {
     width: (100% / 3) - ($grid-spacing * 8 / 12);
   }
-  
-  .col-l-m-5 {
+
+  .col-m-5 {
     width: (100% / 2.4) - ($grid-spacing * 7 / 12);
   }
-  
-  .col-l-m-6 {
+
+  .col-m-6 {
     width: (100% / 2) - ($grid-spacing * 6 / 12);
   }
-  
-  .col-l-m-7 {
+
+  .col-m-7 {
     width: (100% / 1.714285714285714) - ($grid-spacing * 5 / 12);
   }
-  
-  .col-l-m-8 {
+
+  .col-m-8 {
     width: (100% / 1.5) - ($grid-spacing * 4 / 12);
   }
-  
-  .col-l-m-9 {
+
+  .col-m-9 {
     width: (100% / 1.333333333333333) - ($grid-spacing * 3 / 12);
   }
-  
-  .col-l-m-10 {
+
+  .col-m-10 {
     width: (100% / 1.2) - ($grid-spacing * 2 / 12);
   }
-  
-  .col-l-m-11 {
+
+  .col-m-11 {
     width: (100% / 1.090909090909091) - ($grid-spacing * 1 / 12);
   }
-  
-  .col-l-m-12 {
+
+  .col-m-12 {
     width: 100%;
   }
 }
@@ -207,51 +219,51 @@ $grid-spacing:3%;
     flex-direction: row;
   }
 
-  .col-l-l-1 {
+  .col-l-1 {
     width: (100% / 12) - ($grid-spacing * 11 / 12);
   }
-  
-  .col-l-l-2 {
+
+  .col-l-2 {
     width: (100% / 6) - ($grid-spacing * 10 / 12);
   }
-  
-  .col-l-l-3 {
+
+  .col-l-3 {
     width: (100% / 4) - ($grid-spacing * 9 / 12);
   }
-  
-  .col-l-l-4 {
+
+  .col-l-4 {
     width: (100% / 3) - ($grid-spacing * 8 / 12);
   }
-  
-  .col-l-l-5 {
+
+  .col-l-5 {
     width: (100% / 2.4) - ($grid-spacing * 7 / 12);
   }
-  
-  .col-l-l-6 {
+
+  .col-l-6 {
     width: (100% / 2) - ($grid-spacing * 6 / 12);
   }
-  
-  .col-l-l-7 {
+
+  .col-l-7 {
     width: (100% / 1.714285714285714) - ($grid-spacing * 5 / 12);
   }
-  
-  .col-l-l-8 {
+
+  .col-l-8 {
     width: (100% / 1.5) - ($grid-spacing * 4 / 12);
   }
-  
-  .col-l-l-9 {
+
+  .col-l-9 {
     width: (100% / 1.333333333333333) - ($grid-spacing * 3 / 12);
   }
-  
-  .col-l-l-10 {
+
+  .col-l-10 {
     width: (100% / 1.2) - ($grid-spacing * 2 / 12);
   }
-  
-  .col-l-l-11 {
+
+  .col-l-11 {
     width: (100% / 1.090909090909091) - ($grid-spacing * 1 / 12);
   }
-  
-  .col-l-l-12 {
+
+  .col-l-12 {
     width: 100%;
   }
 }
