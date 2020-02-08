@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Dandush03/Electronic-Shop/d185308250248ddba7de59a7da2e711ae4125468/shop.html)
+[Live Demo Link](https://rawcdn.githack.com/Dandush03/Electronic-Shop/32ccbdf88bbe300ccb6ba8ec124c0295f0be189d/index.html)
 
 
 ## Getting Started
