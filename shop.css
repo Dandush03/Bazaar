@@ -509,15 +509,26 @@ a:hover {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
+}
+
+.add-img > a > picture {
+  overflow: hidden;
+  width: auto;
+  height: 100%;
+  position: relative;
+  padding-bottom: 100%;
+  display: block;
 }
 
 .add-img img {
+  position: absolute;
   width: 100%;
   height: 100%;
 }
 
 .add-desc {
-  padding: 2% 10%;
+  padding: 2% 2%;
   font-family: "Roboto", sans-serif;
   color: #383838;
   display: -webkit-box;

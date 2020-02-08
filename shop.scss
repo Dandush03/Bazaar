@@ -31,7 +31,6 @@ a {
   }
 }
 
-
 [class^="col-"] {
   float: left;
   margin-right: $grid-spacing;
@@ -204,8 +203,18 @@ a {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
+    &>picture{
+      overflow: hidden;
+      width: auto;
+      height: 100%;
+      position: relative;
+      padding-bottom: 100%;
+    display: block;
+    }
   }
   img{
+    position: absolute;
     width: 100%;
     height: 100%;
   }
@@ -213,7 +222,7 @@ a {
 
 .add-desc {
 
-  padding: 2% 10%;
+  padding: 2% 2%;
 
   font-family: $font-rob;
   color: $c-black;
@@ -576,10 +585,7 @@ footer>:last-child>div>div:last-child>div>ul {
         padding: 0;
       }
     }
-
-
   }
-
 }
 
 @media only screen and (min-width: $breakpoint-tablet) {
