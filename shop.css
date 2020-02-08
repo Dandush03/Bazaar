@@ -502,7 +502,18 @@ a:hover {
 }
 
 .add-img {
-  padding: 2%;
+  padding: 4%;
+}
+
+.add-img > a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.add-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .add-desc {
@@ -516,6 +527,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 150%;
 }
 
 .add-desc h2 {
@@ -530,12 +542,12 @@ a:hover {
   font-size: 100%;
   word-wrap: break-word;
   white-space: pre-wrap;
-  word-break: break-word;
+  word-break: break-all;
   text-align: justify;
 }
 
 .add-desc a {
-  padding: 0 4%;
+  padding: 10px 0;
   margin: 0;
 }
 
@@ -556,6 +568,13 @@ a:hover {
   word-break: keep-all;
   white-space: nowrap;
   font-weight: bold;
+  color: #D35266;
+}
+
+.add-desc div .add-cart {
+  background-color: #D35266;
+  color: white;
+  padding: 5px 10px;
 }
 
 .add-desc div .add-cart svg {
@@ -564,7 +583,7 @@ a:hover {
 }
 
 .add-desc div .add-cart svg path {
-  fill: #D35266;
+  fill: white;
   width: 24px;
   height: 24px;
 }
