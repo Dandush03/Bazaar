@@ -542,6 +542,9 @@ footer {
     }
   }
 }
+footer>:last-child>div>div:last-child>div>ul {
+  justify-content: center;
+}
 
 @media only screen and (max-width: $breakpoint-tablet - 1px) {
   footer {
@@ -554,9 +557,7 @@ footer {
       }
     }
 
-    &>:last-child>div>div:last-child>div>ul {
-      justify-content: center;
-    }
+    
   }
 
 }

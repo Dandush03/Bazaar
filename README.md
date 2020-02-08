@@ -1,8 +1,8 @@
 # Capstone - HTML/CSS - Electronic Shop
 
-> In this project, I got the chance to build a responsive website. We’ll be cloning [News Week](http://www.newsweek.com/), a news-focused page which uses media queries to gracefully degrade their site as the window size is reduced.
+> In this project, I got the chance to build a responsive website. I’ll be using Mohammad Awad layoust from this incredibly work he did and post in [Bëhance](https://www.behance.net/gallery/24796463/ZATTIX), with some changes, this page I planned to use it for learning porpusess for mastering SASS pre-compailer. Here I'll add a shot of the main content;
 
-![screenshot](./example-page.png)
+![screenshot](./main-style-demo.png)
 
 ## Built With
 

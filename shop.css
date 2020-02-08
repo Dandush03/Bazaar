@@ -908,6 +908,12 @@ footer > :last-child > div > div > ul > :first-child > a {
   border: none;
 }
 
+footer > :last-child > div > div:last-child > div > ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media only screen and (max-width: 767px) {
   footer > :first-child > div > :first-child {
     -webkit-box-orient: vertical;
@@ -920,11 +926,6 @@ footer > :last-child > div > div > ul > :first-child > a {
   }
   footer > :first-child > div > :first-child > p {
     padding: 0;
-  }
-  footer > :last-child > div > div:last-child > div > ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
