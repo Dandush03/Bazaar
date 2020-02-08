@@ -296,6 +296,10 @@ body {
   background-color: whitesmoke;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 article {
   background-color: white;
 }
@@ -988,6 +992,21 @@ footer > :last-child > div > div:last-child > div > ul {
 }
 
 @media only screen and (min-width: 1025px) {
+  body::-webkit-scrollbar {
+    display: unset;
+  }
+  body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px grey;
+            box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+    border-radius: 10px;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background: #6d6d6d;
+  }
   .arrows {
     display: none;
   }
@@ -1035,12 +1054,18 @@ footer > :last-child > div > div:last-child > div > ul {
   }
   .category::-webkit-scrollbar {
     display: unset;
-    background-color: #adadad;
-    border: gray solid unset;
+  }
+  .category::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px grey;
+            box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
   }
   .category::-webkit-scrollbar-thumb {
-    background-color: lightgray;
-    border: black solid solid;
+    background: #a3a3a3;
+    border-radius: 10px;
+  }
+  .category::-webkit-scrollbar-thumb:hover {
+    background: #6d6d6d;
   }
 }
 /*# sourceMappingURL=shop.css.map */
