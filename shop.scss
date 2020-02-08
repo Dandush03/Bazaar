@@ -287,7 +287,7 @@ section {
   max-width: $max-width-sections;
 }
 
-.no-border{
+.no-border {
   border: none;
 }
 
@@ -456,7 +456,7 @@ footer {
   overflow: hidden;
   background-color: rgb(221, 221, 221);
 
-  &>div{
+  &>div {
     padding: 0 10px;
   }
 
@@ -500,15 +500,16 @@ footer {
       }
     }
 
-    &>ul{
+    &>ul {
       text-align: center;
       justify-content: center;
     }
 
-    .icon{
+    .icon {
       padding: 0 5px;
       cursor: pointer;
-      &>svg{
+
+      &>svg {
         height: 20px;
         width: 20px;
       }
@@ -529,6 +530,10 @@ footer {
     &>ul {
       &>li {
         padding: 0;
+
+        &>a {
+          color: $c-black;
+        }
       }
 
       &>:first-child>a {
@@ -536,6 +541,24 @@ footer {
       }
     }
   }
+}
+
+@media only screen and (max-width: $breakpoint-tablet - 1px) {
+  footer {
+    &>:first-child>div> :first-child {
+      flex-direction: column;
+      justify-content: center;
+
+      &>p {
+        padding: 0;
+      }
+    }
+
+    &>:last-child>div>div:last-child>div>ul {
+      justify-content: center;
+    }
+  }
+
 }
 
 @media only screen and (min-width: $breakpoint-tablet) {
@@ -610,7 +633,7 @@ footer {
 
 @media only screen and (min-width: $breakpoint-desktop + 1px) {
 
-  .arrows{
+  .arrows {
     display: none;
   }
 

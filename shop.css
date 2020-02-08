@@ -37,8 +37,8 @@ body {
 }
 
 .title-logo h2 {
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   margin: 0;
   font-size: 400%;
   line-height: 90%;
@@ -202,6 +202,8 @@ main {
 }
 
 .shop-now a {
+  max-width: 100vw;
+  max-height: 100vh;
   background-color: yellow;
   padding: 4%;
   width: -webkit-fit-content;
@@ -215,13 +217,13 @@ main {
   color: #D35266;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .shop-now a:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   text-decoration: underline;
   -webkit-text-decoration-color: #888;
           text-decoration-color: #888;
@@ -898,8 +900,32 @@ footer > :last-child > div > div > ul > li {
   padding: 0;
 }
 
+footer > :last-child > div > div > ul > li > a {
+  color: #383838;
+}
+
 footer > :last-child > div > div > ul > :first-child > a {
   border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  footer > :first-child > div > :first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer > :first-child > div > :first-child > p {
+    padding: 0;
+  }
+  footer > :last-child > div > div:last-child > div > ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
