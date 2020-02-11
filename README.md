@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Dandush03/Fruit-Bazaar/c10fbc37b4671d96968acc9ef6362cc7a347aba4/shop.html)
+[Live Demo Link](https://rawcdn.githack.com/Dandush03/Bazaar/b1eeec53778766f48bcd8b0bd462c57727fb4da7/index.html)
 
 
 ## Getting Started
