@@ -121,12 +121,6 @@ body {
   }
 }
 
-.red {
-  background-color: $c-red;
-  color: white;
-
-}
-
 header {
   width: 100%;
   position: fixed;
@@ -236,6 +230,11 @@ main {
       text-decoration: underline;
       text-decoration-color: $c-gray;
     }
+  }
+
+  .red {
+    background-color: $c-red;
+    color: white;
   }
 
   .nav-hor {

@@ -133,11 +133,6 @@ body {
   display: none;
 }
 
-.red {
-  background-color: #d35266;
-  color: white;
-}
-
 header {
   width: 100%;
   position: fixed;
@@ -269,6 +264,11 @@ main {
     text-decoration: underline;
     -webkit-text-decoration-color: #888;
     text-decoration-color: #888;
+  }
+
+  .red {
+    background-color: #d35266;
+    color: white;
   }
 
   .nav-hor ul {
