@@ -164,17 +164,6 @@ header {
   justify-content: center;
 }
 
-.dark-red {
-  color: rgba(47, 47, 47, 0.733);
-  background-color: #272727;
-}
-
-.dark-red a {
-  color: rgba(158, 158, 158, 0.733);
-  background-color: #272727;
-  text-decoration: none;
-}
-
 main {
   margin-top: 70px;
 }
@@ -269,6 +258,17 @@ main {
   .title-logo h2 {
     margin: 0;
     font-size: 1200%;
+  }
+
+  .dark-red {
+    color: rgba(47, 47, 47, 0.733);
+    background-color: #272727;
+  }
+
+  .dark-red a {
+    color: rgba(158, 158, 158, 0.733);
+    background-color: #272727;
+    text-decoration: none;
   }
 
   .nav-hor ul {
