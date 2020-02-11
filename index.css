@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
@@ -56,8 +56,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .nav-hor .logo {
@@ -72,13 +72,13 @@ body {
   text-align: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-transform: uppercase;
   white-space: nowrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav-hor ul {
@@ -87,8 +87,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
   padding: 0;
@@ -124,8 +124,8 @@ body {
   display: flex;
   text-transform: uppercase;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   white-space: nowrap;
 }
 
@@ -152,16 +152,16 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .justify-c-c {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .dark-red {
@@ -195,8 +195,8 @@ main {
   display: flex;
   text-transform: uppercase;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   white-space: nowrap;
   font-size: 200%;
 }
@@ -223,27 +223,28 @@ main {
 
 .shop-now a:hover {
   -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
   text-decoration: underline;
   -webkit-text-decoration-color: #888;
-          text-decoration-color: #888;
+  text-decoration-color: #888;
 }
 
 .flex-middle {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
     max-width: 1024px;
   }
+
   .title-logo {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
@@ -252,6 +253,7 @@ main {
     width: -moz-fit-content;
     width: fit-content;
   }
+
   .title-logo h2 {
     margin: 0;
     font-size: 800%;
@@ -263,32 +265,40 @@ main {
     padding: 0;
     margin: 0;
   }
+
   .title-logo h2 {
     margin: 0;
     font-size: 1200%;
   }
+
   .nav-hor ul {
     margin-right: 1%;
   }
+
   .nav-hor ul li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .nav-hor ul li .red {
     background-color: #D35266;
     color: white;
     border-radius: 5px;
     border: #D35266 1px solid;
   }
+
   .nav-hor ul li .red i svg path {
     fill: white;
   }
+
   .nav-hor ul li a span {
     display: inline-block;
   }
+
   .container {
     max-width: 1024px;
   }
 }
+
 /*# sourceMappingURL=index.css.map */
