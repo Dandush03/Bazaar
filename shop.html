@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Capstone - HTML/CSS - Electronic Shop</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link href="shop.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+
+<body>
+
+  <div>
+
+    <header class="dark-red fix-top">
+
+      <nav class="container nav-hor dark-red">
+        <a class="logo" href="index.html">Logo</a>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fas fa-list-alt"></i><span>Lastes Purchase</span></a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart"></i><span>Purchase List</span></a>
+          </li>
+
+          <li>
+            <a href="#" class="red"><i class="fas fa-plus"></i><span>Post an Add</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+
+      <section class="row red background-img col-12">
+        <h6>Searcher Section</h6>
+        <div class="container justify-c-c">
+          <form action="#" class="product-search container" method="GET">
+            <select name="departments">
+              <option value="0" disabled selected class="disabled-opt">- Departments -</option>
+              <option value="1">Baskets</option>
+              <option value="2">Apples</option>
+              <option value="3">Nuts</option>
+              <option value="4">Candies</option>
+            </select>
+            <input type="text" placeholder="Branch">
+            <input type="text" placeholder="Product">
+            <button type="submit">
+              <i class="fas fa-search-dollar"></i>
+              <span>Go!</span>
+            </button>
+          </form>
+        </div>
+
+      </section>
+
+      <section class="trading row col-12 container">
+        <h6>Trading Articles</h6>
+
+        <div class="add-title col-12">
+          <span>Most Wanted</span>
+          <div class="line"></div>
+        </div>
+
+
+        <article class="col-12 flex-box-m container">
+          <h6>Advertised Article</h6>
+          <div class="add-img float-left col-m-4 col-12 col-l-4 flex-middle">
+            <a href="#">
+              <picture>
+                <img alt="img"
+                  src="https://m.media-amazon.com/images/I/81WyNlzadAL._AC_UL320_ML3_.jpg">
+              </picture>
+            </a>
+          </div>
+
+          <div class="add-desc float-left col-m-8 col-12 col-l-8">
+            <h2 class="add-title">ENSOF CORP.</h2>
+            <span class="add-description">The Fruit Company - ENSOF Celebration Fruit Basket-18 Pieces Premium Fresh Pears, Apples, Oranges, Kiwi, Pineapple, and Mango with a Dried Fruit Medley in a Reusable Wire and Cloth Lined Basket</span>
+            <div>
+              <a><span class="add-cart"><i class="far fa-plus-square"></i> Buy It Now</span></a>
+              <a><span class="add-price">$112.00</span></a>
+            </div>
+
+          </div>
+
+        </article>
+      </section>
+
+      <section id="Baskets">
+        <div class="container">
+          <div class="add-title col-12 ">
+            <span>Category:</span>
+            <span>Baskets</span>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="row col-12 container category">
+          <h6>Fruit Basket Sells Section</h6>
+
+          <div class="container border-inset">
+
+            <div class="arrows">
+              <div>
+                <div>
+                  <svg height="200" width="20">
+                    <path d="M 8 100 l 50 -300" stroke="red" stroke-width="6" fill="none" />
+                    <path d="M 8 100 l 50 300" stroke="red" stroke-width="6" fill="none" />
+                  </svg>
+                </div>
+
+                <div>
+                  <svg height="200" width="20">
+                    <path d="M 8 100 l 50 -300" stroke="red" stroke-width="6" fill="none" />
+                    <path d="M 8 100 l 50 300" stroke="red" stroke-width="6" fill="none" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/916GGUv8wqL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>GiftTree Five Star Fruit Congratulations Gift Basket | Fresh Fruit Includes Pears, Apples, Juicy Oranges | Enjoy Almond Roca, Assorted Nuts & More | Celebrate Life's Milestones</span>
+                </h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Orlando, Florida</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$79.99</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/81V1CnNdLbL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>GiftTree Fresh Fruit and Godiva Congratulations Gift Basket | Includes Godiva Chocolates, Fresh Pears, Crisp Apples, Juicy Oranges | Celebrate Life's Milestones</span>
+                </h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Washintong D.C.</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$84.95</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/81pGVuVz3eL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>12-Piece Premium Orchard Delights Fruit Basket</span>
+                </h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Caracas, Venezuela</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$49.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/916A905FJ5L._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Capital City Fruit 15 Piece Premium Fruit, Artisan Meat and Cheese Basket - Orchard Fresh Apples, Oranges, Pears - La Quercia - Milton Creamery - Perfect for Corp Gifts, Thank You, Birthdays, Holidays</span>
+                </h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$149.83</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/51Pb4ra3+TL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>GiftTree Fruit and Gourmet Cookies Gift Basket | Premium Fresh Pears, Apples and Oranges with Fresh Cookies | Perfect Gift for Birthday, Business, Thank You, Sympathy, Holiday or Any Occasion</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$59.95</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/51STjAX21tL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>The Fruit Company- Festival of Fruit Basket - Assortment of 33 Pieces of Premium Fresh Apples, Pears, Oranges, Kiwi, Pineapple and Mango with a Dried Fruit Medley Reusable Woven Wooden Basket</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Japan</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$124.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/71XCOYW54uL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Winter Gift Tower- The Fruit Company 5 Holiday-Themed Boxes Filled with Chocolate Covered Cherries Assorted Chocolate Truffles Mixed Nuts 9 pieces Premium Fresh Apples & Pears</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Who Knows</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$74.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/61rgA50x8kL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Group Therapy - Premium Gourmet Food Gift Basket - Meat, Cheese, Nuts, Smoked Salmon, Dried Fruit, Chocolate, Cookies & More - Christmas Holiday Gift Idea</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$387.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="Apples">
+        <div class="container">
+          <div class="add-title col-12 ">
+            <span>Category:</span>
+            <span>Apples</span>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="row col-12 container category">
+          <h6>Apples Section</h6>
+
+          <div class="container border-inset">
+
+            <div class="arrows">
+              <div>
+                <div>
+                  <svg height="200" width="20">
+                    <path d="M 8 100 l 50 -300" stroke="red" stroke-width="6" fill="none" />
+                    <path d="M 8 100 l 50 300" stroke="red" stroke-width="6" fill="none" />
+                  </svg>
+                </div>
+
+                <div>
+                  <svg height="200" width="20">
+                    <path d="M 8 100 l 50 -300" stroke="red" stroke-width="6" fill="none" />
+                    <path d="M 8 100 l 50 300" stroke="red" stroke-width="6" fill="none" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/4147jUEfy9L._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Kauffman's Fruit Farm Orchard-Fresh Kosher Red Delicious Apples, Ideal for Eating and Salads, Sweet and Juicy Apple (Box of 8)</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Orlando, Florida</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$23.80</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/31g12YnQs1L._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Fresh Chrysophyllum Cainito Green Star Apple (Vú Sữa) 2 LBS</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Washintong D.C.</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$56.88</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/41k6eLXvYDL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>GOLDEN DELICIOUS APPLES FRESH PRODUCE FRUIT 3 LB BAG</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Caracas, Venezuela</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$24.99</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/31LJjE4BA8L._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>GRANNY SMITH APPLES FRESH PRODUCE FRUIT 3 POUND BAG</span>
+                </h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$24.25</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/41v4jqJkcgL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Organic Honeycrisp Apple Gift by FruitShare</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$34.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/31vpqvDUrxL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Fresh Caimito (Star Apple) 2lb</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Japan</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$55.75</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/91TGelfQI-L._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Barnyard Designs Tasty Apples 5 Cents Retro Vintage Tin Bar Sign Country Home Decor 11" x 11"</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Who Knows</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$12.95</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/51OooQTbdSL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>20 Semillas - Custard Apple Fruit, Buddha's Head Fruit, Cherimoya, Chirimoya, Sugar Apple, SweetSop, Annona Tree Semillas</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$12.79</span></a>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <section id="Nuts">
+        <div class="container">
+          <div class="add-title col-12 ">
+            <span>Category:</span>
+            <span>Nuts</span>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="row col-12 container category">
+          <h6>Nuts Sells Section</h6>
+
+          <div class="container border-inset">
+
+            <div class="arrows">
+              <div>
+                <div>
+                  <svg height="200" width="20">
+                    <path d="M 8 100 l 50 -300" stroke="red" stroke-width="6" fill="none" />
+                    <path d="M 8 100 l 50 300" stroke="red" stroke-width="6" fill="none" />
+                  </svg>
+                </div>
+
+                <div>
+                  <svg height="200" width="20">
+                    <path d="M 8 100 l 50 -300" stroke="red" stroke-width="6" fill="none" />
+                    <path d="M 8 100 l 50 300" stroke="red" stroke-width="6" fill="none" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/81ozTu2h1tL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Organic Keto Raw Nuts Mix, 4 Pounds — Keto Snack Contains Non-GMO Brazil Nuts, Pecans, Walnuts, Hazelnuts and Macadamia Nuts, Low Carb Vegan Superfood, Kosher, Non-Irradiated, No Added Sugar, Bulk</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Orlando, Florida</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$55.99</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/41DxhFqWXIL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Barùkas: The Healthiest Nuts in the World - Roasted in a 12 ounce (340 gram) Resealable Bag for Freshness. Delicious / Wild Grown / Sustainable / High Fiber.</span>
+                </h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Washintong D.C.</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$59.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/91-Fk4yY9uL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>MacFarms Fresh from Hawaii Macadamia Nuts (Milk Chocolate 6oz bag)</span>
+                </h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Caracas, Venezuela</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$19.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/91Tm0+4+4VL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Kirkland Signature Kirkland Signature Pecan Halves - 2 lbs (32 oz.)</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$19.83</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/61edzgVoCXL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Oregon Farm Fresh Snacks - Cranberry Craze - Cranberry and Nut Mix (20 oz)</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$11.99</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/51skwkFFVpL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>In Shell Deluxe Mixed Nuts - TWIN PACK - 2/32 oz.</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Japan</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$16.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/61+WYgEaoFL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>BEER NUTS Cashews | Half Pound Bag (2-Pack)</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Who Knows</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$34.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/41th39MUM-L._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Koeze Classic Mixed Nuts - 20 oz. Gift Jar - Contains: Colossal Cashews, Southern Pecans and California Almonds</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$65.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section id="Candies">
+        <div class="container">
+          <div class="add-title col-12 ">
+            <span>Category:</span>
+            <span>Candies</span>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="row col-12 container category">
+          <h6>Candies Sells Section</h6>
+
+          <div class="container border-inset">
+
+            <div class="arrows">
+              <div>
+                <div>
+                  <svg height="200" width="20">
+                    <path d="M 8 100 l 50 -300" stroke="red" stroke-width="6" fill="none" />
+                    <path d="M 8 100 l 50 300" stroke="red" stroke-width="6" fill="none" />
+                  </svg>
+                </div>
+
+                <div>
+                  <svg height="200" width="20">
+                    <path d="M 8 100 l 50 -300" stroke="red" stroke-width="6" fill="none" />
+                    <path d="M 8 100 l 50 300" stroke="red" stroke-width="6" fill="none" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/61l5gizGBbL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>QUMIR Organic Dark Chocolate 4 PACK WITH Passion Fruit | made with amazon arriba cacao beans | Pack of 4 Bars, 2.47oz each.</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Orlando, Florida</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$16.99</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/41WbxkfxhnL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Deluxe Chocolate Gift Box - All-Natural Premium Dark Chocolate Assortment - Super7 Dark Chocolate Bar + Natural Fruit Inclusions Assorted Dark Chocolate Discs - Super Foods with Nutrients</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Washintong D.C.</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$24.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/61UmT5TvypL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Lakrids by Johan Bülow B - Passion Fruit Chocolate Coated Liquorice (295g)</span></h2>
+                <div>
+                  <span>Fresh</span>
+                  <span>From: Caracas, Venezuela</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$33.90</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/61AXECsaDwL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Perfect Keto Protein Snacks - Box of 12 Bars - Low Carb Diet Friendly with Coconut Oil, Collagen, No Added Sugar - Sweet Treat in Almond Butter Brownie Flavor - Individual Packs for Travel, Hiking</span>
+                </h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$39.83</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/61b2+EdIdHL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>Kayla's Cake Premium French Macarons Cookies Gift Baskets Gourmet Chocolate Box Food Desserts Birthday Snack Care Packages College Students Holiday Christmas Thank You Condolences Women Men Classic 6</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Oregon</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">34.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/61Hb2BPHUWL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title">
+                  <span>Andy Anand Milk Chocolate Peanuts Sugar Free Gift Boxed & Greeting Card, Delicious, Succulent & Divine Birthday Valentine Christmas Holiday Mothers Fathers Day Basket for Men & Women (2Lbs)</span>
+                </h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Japan</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$49.99</span></a>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="product flex-box float-left">
+
+              <div class="add-img col-12 flex-middle">
+                <a href="#">
+                  <picture>
+                    <img alt="img" src="https://m.media-amazon.com/images/I/81w2X5gRlQL._AC_UL320_ML3_.jpg">
+                  </picture>
+                </a>
+              </div>
+
+              <div class="row col-12 flex-middle">
+                <h2 class="art-title"><span>The Fruit Company Chocolate Jubilee Valentine's Day Mini Tower- Chocolate Covered Cherries Peppermint Bark Assorted Chocolate Truffles Zebra Chocolate Popcorn in 3 Holiday Themed Boxes</span></h2>
+                <div>
+                  <span>Sealed</span>
+                  <span>From: Who Knows</span>
+                </div>
+                <div>
+                  <a><span class="art-cart"><i class="far fa-plus-square"></i></span></a>
+                  <a><span class="art-price">$74.00</span></a>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div>
+          <div>
+            <a href="#">
+              <span>Logo</span>
+            </a>
+            <p>© 2020 Company</p>
+          </div>
+          <ul>
+
+            <li><i class="icon fab fa-facebook"></i></li>
+            <li><i class="icon fab fa-twitter"></i></li>
+            <li><i class="icon fab fa-instagram"></i></li>
+            <li><i class="icon fab fa-tumblr"></i></li>
+            <li><i class="icon fab fa-linkedin-in"></i></li>
+
+          </ul>
+
+
+        </div>
+      </div>
+
+      <div class="container">
+        <div>
+          <div>
+            <ul>
+              <li><strong>Lenguages:</strong></li>
+              <li><a href="#" class="no-border">English</a></li>
+              <li><a href="#">Spanish</a></li>
+              <li><a href="#">French</a></li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Corrections</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Terms of Sale</a></li>
+                <li><a href="#">Archive</a></li>
+                <li><a href="#" class="">Consent preferences</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>
