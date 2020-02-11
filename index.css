@@ -134,7 +134,7 @@ body {
 }
 
 .red {
-  background-color: #D35266;
+  background-color: #d35266;
   color: white;
 }
 
@@ -214,7 +214,7 @@ main {
   border-style: solid;
   border-width: 1px;
   text-decoration: none;
-  color: #D35266;
+  color: #d35266;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   -webkit-transition: all 0.5s;
@@ -282,10 +282,10 @@ main {
   }
 
   .nav-hor ul li .red {
-    background-color: #D35266;
+    background-color: #d35266;
     color: white;
     border-radius: 5px;
-    border: #D35266 1px solid;
+    border: #d35266 1px solid;
   }
 
   .nav-hor ul li .red i svg path {
