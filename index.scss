@@ -92,6 +92,10 @@ body {
       display: flex;
       width: fit-content;
 
+      i {
+        padding-right: 5px;
+      }
+
       .red {
         &>i {
           svg {
@@ -100,10 +104,6 @@ body {
             }
           }
         }
-      }
-
-      i {
-        padding-right: 5px;
       }
 
       a {

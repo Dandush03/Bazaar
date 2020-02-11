@@ -109,12 +109,12 @@ body {
   width: fit-content;
 }
 
-.nav-hor ul li .red>i svg path {
-  fill: yellow;
-}
-
 .nav-hor ul li i {
   padding-right: 5px;
+}
+
+.nav-hor ul li .red>i svg path {
+  fill: yellow;
 }
 
 .nav-hor ul li a {
