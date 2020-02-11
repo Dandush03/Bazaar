@@ -109,12 +109,12 @@ body {
   width: fit-content;
 }
 
-.nav-hor ul li i {
-  padding-right: 5px;
+.nav-hor ul li .red i svg path {
+  fill: yellow;
 }
 
-.nav-hor ul li .red > i svg path {
-  fill: yellow;
+.nav-hor ul li i {
+  padding-right: 5px;
 }
 
 .nav-hor ul li a {
@@ -131,6 +131,11 @@ body {
 
 .nav-hor ul li a span {
   display: none;
+}
+
+.red {
+  background-color: #D35266;
+  color: white;
 }
 
 header {
@@ -159,6 +164,17 @@ header {
           justify-content: center;
 }
 
+.dark-red {
+  color: rgba(47, 47, 47, 0.733);
+  background-color: #272727;
+}
+
+.dark-red a {
+  color: rgba(158, 158, 158, 0.733);
+  background-color: #272727;
+  text-decoration: none;
+}
+
 main {
   margin-top: 70px;
 }
@@ -170,6 +186,47 @@ main {
 
 .fill-hight {
   height: 100%;
+}
+
+.shop-now {
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  font-size: 200%;
+}
+
+.shop-now a {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: yellow;
+  padding: 4%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30%;
+  border-color: yellow;
+  border-style: solid;
+  border-width: 1px;
+  text-decoration: none;
+  color: #D35266;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.shop-now a:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  text-decoration: underline;
+  -webkit-text-decoration-color: #888;
+          text-decoration-color: #888;
 }
 
 .flex-middle {
@@ -210,57 +267,6 @@ main {
     margin: 0;
     font-size: 1200%;
   }
-  .dark-red {
-    color: rgba(47, 47, 47, 0.733);
-    background-color: #272727;
-  }
-  .dark-red a {
-    color: rgba(158, 158, 158, 0.733);
-    background-color: #272727;
-    text-decoration: none;
-  }
-  .shop-now {
-    padding: 2%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-transform: uppercase;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    white-space: nowrap;
-    font-size: 200%;
-  }
-  .shop-now a {
-    max-width: 100vw;
-    max-height: 100vh;
-    background-color: yellow;
-    padding: 4%;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 30%;
-    border-color: yellow;
-    border-style: solid;
-    border-width: 1px;
-    text-decoration: none;
-    color: #d35266;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .shop-now a:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-    text-decoration: underline;
-    -webkit-text-decoration-color: #888;
-            text-decoration-color: #888;
-  }
-  .red {
-    background-color: #d35266;
-    color: white;
-  }
   .nav-hor ul {
     margin-right: 1%;
   }
@@ -270,12 +276,12 @@ main {
     display: flex;
   }
   .nav-hor ul li .red {
-    background-color: #d35266;
+    background-color: #D35266;
     color: white;
     border-radius: 5px;
-    border: #d35266 1px solid;
+    border: #D35266 1px solid;
   }
-  .nav-hor ul li .red > i svg path {
+  .nav-hor ul li .red i svg path {
     fill: white;
   }
   .nav-hor ul li a span {

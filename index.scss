@@ -4,7 +4,7 @@ $font-mont: 'Montserrat',
 sans-serif;
 $font-rob: 'Roboto',
 sans-serif;
-$c-red: #d35266;
+$c-red: #D35266;
 $c-gray: #888;
 $c-black: #383838;
 $available-screen: calc(100vh - 70px);
@@ -92,18 +92,18 @@ body {
       display: flex;
       width: fit-content;
 
-      i {
-        padding-right: 5px;
-      }
-
       .red {
-        &>i {
+        i {
           svg {
             path {
               fill: yellow;
             }
           }
         }
+      }
+
+      i {
+        padding-right: 5px;
       }
 
       a {
@@ -119,6 +119,12 @@ body {
       }
     }
   }
+}
+
+.red {
+  background-color: $c-red;
+  color: white;
+
 }
 
 header {
@@ -139,6 +145,17 @@ header {
   justify-content: center;
 }
 
+.dark-red {
+  color: rgba(47, 47, 47, 0.733);
+  background-color: rgb(39, 39, 39);
+
+  a {
+    color: rgba(158, 158, 158, 0.733);
+    background-color: rgb(39, 39, 39);
+    text-decoration: none;
+  }
+}
+
 main {
   margin-top: 70px;
 }
@@ -150,6 +167,38 @@ main {
 
 .fill-hight {
   height: 100%;
+}
+
+.shop-now {
+  padding: 2%;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 200%;
+
+  a {
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: yellow;
+    padding: 4%;
+    width: fit-content;
+    border-radius: 30%;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 1px;
+    text-decoration: none;
+    color: $c-red;
+    font-weight: bold;
+    font-family: $font-mont;
+    transition: all 0.5s;
+  }
+
+  a:hover {
+    transform: scale(1.3);
+    text-decoration: underline;
+    text-decoration-color: $c-gray;
+  }
 }
 
 .flex-middle {
@@ -189,54 +238,6 @@ main {
     }
   }
 
-  .dark-red {
-    color: rgba(47, 47, 47, 0.733);
-    background-color: rgb(39, 39, 39);
-
-    a {
-      color: rgba(158, 158, 158, 0.733);
-      background-color: rgb(39, 39, 39);
-      text-decoration: none;
-    }
-  }
-
-  .shop-now {
-    padding: 2%;
-    display: flex;
-    text-transform: uppercase;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 200%;
-
-    a {
-      max-width: 100vw;
-      max-height: 100vh;
-      background-color: yellow;
-      padding: 4%;
-      width: fit-content;
-      border-radius: 30%;
-      border-color: yellow;
-      border-style: solid;
-      border-width: 1px;
-      text-decoration: none;
-      color: $c-red;
-      font-weight: bold;
-      font-family: $font-mont;
-      transition: all 0.5s;
-    }
-
-    a:hover {
-      transform: scale(1.3);
-      text-decoration: underline;
-      text-decoration-color: $c-gray;
-    }
-  }
-
-  .red {
-    background-color: $c-red;
-    color: white;
-  }
-
   .nav-hor {
     ul {
 
@@ -250,7 +251,7 @@ main {
           border-radius: 5px;
           border: $c-red 1px solid;
 
-          &>i {
+          i {
             svg {
               path {
                 fill: white;

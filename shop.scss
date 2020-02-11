@@ -2,9 +2,6 @@
 $grid-spacing: 0.1%;
 $max-width-sections: 3000px;
 $border-color: rgb(216, 216, 216);
-$background-color-1: rgb(109, 109, 109);
-$background-color-2: rgb(163, 163, 163);
-$color-gray:#808080;
 
 body {
   background-color: whitesmoke;
@@ -669,17 +666,17 @@ footer>:last-child>div>div:last-child>div>ul {
     }
 
     &::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px $color-gray;
+      box-shadow: inset 0 0 5px grey;
       border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: $background-color-2;
+      background: rgb(163, 163, 163);
       border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb:hover {
-      background: $background-color-1
+      background: rgb(109, 109, 109);
     }
   }
 
@@ -745,17 +742,17 @@ footer>:last-child>div>div:last-child>div>ul {
     }
 
     &::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px $color-gray;
+      box-shadow: inset 0 0 5px grey;
       border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: $background-color-2;
+      background: rgb(163, 163, 163);
       border-radius: 10px;
     }
 
     &::-webkit-scrollbar-thumb:hover {
-      background: $background-color-1;
+      background: rgb(109, 109, 109);
     }
   }
 }
