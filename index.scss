@@ -93,7 +93,7 @@ body {
       width: fit-content;
 
       .red {
-        i {
+        &>i {
           svg {
             path {
               fill: yellow;

@@ -109,7 +109,7 @@ body {
   width: fit-content;
 }
 
-.nav-hor ul li .red i svg path {
+.nav-hor ul li .red>i svg path {
   fill: yellow;
 }
 
