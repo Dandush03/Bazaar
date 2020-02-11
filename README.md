@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Dandush03/Bazaar/b1eeec53778766f48bcd8b0bd462c57727fb4da7/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Dandush03/Bazaar/e049077f77c44c4d122ca702d7c21a20872a7b77/index.html)
 
 
 ## Getting Started
