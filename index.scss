@@ -251,7 +251,7 @@ main {
           border-radius: 5px;
           border: $c-red 1px solid;
 
-          i {
+          &>i {
             svg {
               path {
                 fill: white;
