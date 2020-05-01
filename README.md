@@ -1,6 +1,6 @@
 # Capstone - HTML/CSS - Fruit Bazaar
 
-> In this project, I got the chance to build a responsive website of a Fruit Bazaar. I’ll be using Mohammad Awad layoust from this incredibly work he did and post in [Bëhance](https://www.behance.net/gallery/24796463/ZATTIX), with some changes, this page I planned to use it for learning porpusess for mastering SASS pre-compailer. Here I'll add a shot of the main content;
+> In this project, I got the chance to build a responsive website of a Fruit Bazaar. I’ll be using Mohammad Awad layouts from this incredible work he did and post in [Bëhance](https://www.behance.net/gallery/24796463/ZATTIX), with some changes, this page I planned to use it for learning purposes for mastering SASS pre-compiler. Here I'll add a shot of the main content;
 
 ![screenshot](./main-style-demo.png)
 
@@ -45,7 +45,7 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Thanks to Microverse!
 - Thanks to Mohammed Awad for his Awesome Design
-- And Last But Not Least, Thanks for Amazon for Providing the Content Needed
+- And last but not least, thanks to Amazon for providing the content needed
 
 ## 📝 License
 
