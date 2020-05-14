@@ -7,7 +7,7 @@
 ## Built With
 
 - HTML5/CSS3
-- SASS Precompailer
+- SASS Precompiler
 - Visual Studio Code
 - Nu HTML Validator
 - Beautify
@@ -21,7 +21,7 @@
 
 ## Getting Started
 
-**The webpage is a Capstone Project of Microverse. None of the elements in it really work. It is only to showcase our HTML, CSS and SASS coding abilities.**
+**The webpage is a Capstone Project of Microverse. None of the elements in its work. It is only to showcase our HTML, CSS and SASS coding abilities.**
 
 ## Author
 
@@ -32,7 +32,7 @@
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](./issues/).
 
@@ -42,7 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to anyone who's code was used
 - Thanks to Microverse!
 - Thanks to Mohammed Awad for his Awesome Design
 - And last but not least, thanks to Amazon for providing the content needed
